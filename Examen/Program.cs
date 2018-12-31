@@ -29,7 +29,7 @@ namespace Examen
             //---- COURS 4 -----
 
             //PointTranslation();
-            //PolyPoint();
+            //PolymorfPoint();
             //SumOfPoint();
             //ColorOfPoint();
             //RealTypeOfPoint();
@@ -136,7 +136,7 @@ namespace Examen
             Console.WriteLine(cp.Translate(1, 0));
         }
 
-        public static void PolyPoint()
+        public static void PolymorfPoint()
         {
             Point p = new Point(3, 5);
 
