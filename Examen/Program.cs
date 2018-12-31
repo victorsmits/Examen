@@ -10,6 +10,9 @@ namespace Examen
         public static void Main(string[] args)
         {
             //---- COURS 1 -----
+
+            //NewContact();
+
             //---- COURS 2 -----
 
             //HeritageEmployee();
@@ -42,8 +45,19 @@ namespace Examen
             //TypeInfoAndTest();
             //InvoquerMethode();
             //InstanceCreation();
+
+            //---- COURS 7 -----
+
+
         }
         //---- COURS 1 -----
+
+        public static void NewContact()
+        {
+            Contact marchand = new Contact(" Cédric ", " Marchand ");
+            Console.WriteLine(marchand);
+        }
+
         //---- COURS 2 -----
 
         public static void HeritageEmployee()
@@ -150,6 +164,7 @@ namespace Examen
         }
 
         //---- COURS 6 -----
+
         public static void TotalPriceItems()
         {
             Dictionary<Item, int> purchases = new Dictionary<Item, int>()
@@ -251,6 +266,10 @@ namespace Examen
             new Object[] { "42X", " Leffe des vignes ", 14.50 });
             Console.WriteLine(beer.GetPrice(1));
         }
+
+        //---- COURS 7 -----
+
+
     }
 }
 

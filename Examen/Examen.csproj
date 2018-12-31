@@ -57,6 +57,7 @@
     <Compile Include="SuperInstanceCounter.cs" />
     <Compile Include="Outer.cs" />
     <Compile Include="LinkedList.cs" />
+    <Compile Include="Contact.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
