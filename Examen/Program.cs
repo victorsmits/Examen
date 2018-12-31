@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
+using AliasPair = Examen.OrderedPair<int>;
 
 namespace Examen
 {
@@ -97,6 +98,12 @@ namespace Examen
         {
             Console.WriteLine(max(12, 7));
             Console.WriteLine(max(" sept ", " douze "));
+        }
+
+        public static void AliasMethode()
+        {
+            AliasPair p = new AliasPair(12, 3);
+            Console.WriteLine(p);
         }
 
         public static void EncapsVector()
