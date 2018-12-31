@@ -20,6 +20,7 @@ namespace Examen
 
             //---- COURS 2 -----
 
+            //NewPerson();
             //HeritageEmployee();
 
             //---- COURS 3 -----
@@ -103,6 +104,12 @@ namespace Examen
         //---- COURS 2 -----
         // absence de Pair et orderedPair car conflit avec futur code
 
+        public static void NewPerson()
+        {
+            DateTime birthday = new DateTime(1996, 2, 18);
+            Person arno = new Person(" Arno Feelters ", birthday);
+        }
+
         public static void HeritageEmployee()
         {
             // avec shitbull et overide base.name
@@ -117,11 +124,11 @@ namespace Examen
         public static void InterfaceComplex()
         {
             List<Complex> list = new List<Complex>
-            {
-                new CartesianComplex(2, -1),
-                new PolarComplex(2, Math.PI / 2),
-                new CartesianComplex(-1, 1)
-            };
+                {
+                    new CartesianComplex(2, -1),
+                    new PolarComplex(2, Math.PI / 2),
+                    new CartesianComplex(-1, 1)
+                };
 
             double a = 0;
             double b = 0;
