@@ -13,6 +13,11 @@ namespace Examen
             this.phonenumber = 0;
         }
 
+        public void SetPhoneNumber(int number)
+        {
+            this.phonenumber = number;
+        }
+
         // [...]
     }
 }

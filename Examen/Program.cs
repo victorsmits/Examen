@@ -12,6 +12,7 @@ namespace Examen
             //---- COURS 1 -----
 
             //NewContact();
+            //ChangeContactNumber();
 
             //---- COURS 2 -----
 
@@ -56,6 +57,13 @@ namespace Examen
         {
             Contact marchand = new Contact(" Cédric ", " Marchand ");
             Console.WriteLine(marchand);
+        }
+
+        public static void ChangeContactNumber()
+        {
+            Contact marchand = new Contact(" Cédric ", " Marchand ");
+            marchand.SetPhoneNumber(8172); // this fera référence
+            Console.WriteLine(marchand); // à marchand
         }
 
         //---- COURS 2 -----
