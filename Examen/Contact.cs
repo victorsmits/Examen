@@ -18,6 +18,10 @@ namespace Examen
             this.phonenumber = number;
         }
 
-        // [...]
+        public override string ToString()
+        {
+            return String.Format("{0} {1} ({2}) ", this.firstname,
+             this.lastname, this.phonenumber);
+        }
     }
 }
