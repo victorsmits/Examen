@@ -15,6 +15,7 @@ namespace Examen
             //ChangeContactNumber();
             //ShowContactNumber();
             //NewDies();
+            //NewPairOfDies();
 
             //---- COURS 2 -----
 
@@ -83,6 +84,13 @@ namespace Examen
             Console.WriteLine(d1.VisibleFace);
             Console.WriteLine(d2.VisibleFace);
         }
+
+        public static void NewPairOfDies()
+        {
+            PairOfDice dice = new PairOfDice(6);
+            dice.PrintFaces(); // 1, 3
+        }
+
         //---- COURS 2 -----
 
         public static void HeritageEmployee()
