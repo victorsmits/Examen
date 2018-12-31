@@ -162,7 +162,11 @@ namespace Examen
         public static void ColorOfPoint()
         {
             Point q = new ColouredPoint(1, 2, Color.Red);
-            Console.WriteLine(IsRed((ColouredPoint)q));
+            if (q is ColouredPoint)
+            {
+                ColouredPoint cp = (ColouredPoint)q;
+                Console.WriteLine(IsRed(cp));
+            }
         }
 
         private static bool IsRed(ColouredPoint p)
