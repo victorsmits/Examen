@@ -5,7 +5,9 @@ namespace Examen
     {
         private readonly int x, y;
 
-        // [...]
+        private IntPair()
+        {
+        }
 
         public override bool Equals(object obj)
         {

@@ -2,21 +2,21 @@
 using System.Drawing;
 namespace Examen
 {
-    public class ColouredPoint : Point, Drawable
+    public class ColouredPoint : Point//,Drawable
     {
-        private readonly Color colour;
+        private readonly String colour;
 
-        public ColouredPoint(int x, int y, Color colour) : base(x, y)
+        public ColouredPoint(int x, int y, String colour) : base(x, y)
         {
             this.colour = colour;
         }
 
-        public Color Colour { get { return colour; } }
+        public String Colour { get { return colour; } }
 
-        public void Draw(Graphics g)
-        {
-            g.DrawEllipse(new Pen(colour), X, Y, 3, 3);
-        }
+        //public void Draw(Graphics g)
+        //{
+        //    g.DrawEllipse(new Pen(colour), X, Y, 3, 3);
+        //}
 
         public override Point Translate(int dx, int dy)
         {
@@ -25,7 +25,7 @@ namespace Examen
 
         public override string ToString()
         {
-            return String.Format(" {0} [ color ={1}] ", base.ToString(), colour.Name);
+            return String.Format(" {0} [ String ={1}] ", base.ToString(), colour);
         }
     }
 }

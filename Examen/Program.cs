@@ -10,6 +10,7 @@ namespace Examen
     {
         public static void Main(string[] args)
         {
+
             //---- COURS 1 -----
 
             //NewContact();
@@ -33,6 +34,7 @@ namespace Examen
             //SumOfPoint();
             //ColorOfPoint();
             //RealTypeOfPoint();
+            ShowPoint();
             //InterfaceComplex();
             //MathOverloading();
             //GenericPair();
@@ -131,7 +133,7 @@ namespace Examen
 
         public static void PointTranslation()
         {
-            ColouredPoint cp = new ColouredPoint(1, 2, Color.Red);
+            ColouredPoint cp = new ColouredPoint(1, 2, "Red");
             Console.WriteLine(cp);
             Console.WriteLine(cp.Translate(1, 0));
         }
@@ -140,8 +142,7 @@ namespace Examen
         {
             Point p = new Point(3, 5);
 
-            ColouredPoint cp = new ColouredPoint(1, 2, Color.Red);
-
+            ColouredPoint cp = new ColouredPoint(1, 2, "Red");
             Console.WriteLine((p is Point) + " / " + (p is ColouredPoint));
             Console.WriteLine((cp is Point) + " / " + (cp is ColouredPoint));
         }
@@ -150,8 +151,7 @@ namespace Examen
         {
             Point p = new Point(3, 5);
 
-            ColouredPoint cp = new ColouredPoint(1, 2, Color.Red);
-
+            ColouredPoint cp = new ColouredPoint(1, 2, "Red");
             Console.WriteLine(sum(p, cp));
         }
 
@@ -162,7 +162,7 @@ namespace Examen
 
         public static void ColorOfPoint()
         {
-            Point q = new ColouredPoint(1, 2, Color.Red);
+            Point q = new ColouredPoint(1, 2, "Red");
             if (q is ColouredPoint)
             {
                 ColouredPoint cp = (ColouredPoint)q;
@@ -172,16 +172,24 @@ namespace Examen
 
         private static bool IsRed(ColouredPoint p)
         {
-            return p.Colour.Equals(Color.Red);
+            return p.Colour.Equals("Red");
         }
 
         public static void RealTypeOfPoint()
         {
-            ColouredPoint cp = new ColouredPoint(1, 2, Color.Red);
+            ColouredPoint cp = new ColouredPoint(1, 2, "Red");
             Console.WriteLine((cp is Point) + " / " + (cp is ColouredPoint));
 
             Console.WriteLine(cp.GetType() == typeof(Point));
             Console.WriteLine(cp.GetType() == typeof(ColouredPoint));
+        }
+
+        public static void ShowPoint()
+        {
+            Point p = new ColouredPoint(7, 5, "Red");
+
+            Console.WriteLine(p.ToString());
+            Console.WriteLine(p); // ToString from ColouredPoint
         }
 
         public static void InterfaceComplex()
