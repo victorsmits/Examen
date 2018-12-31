@@ -58,6 +58,7 @@
     <Compile Include="Outer.cs" />
     <Compile Include="LinkedList.cs" />
     <Compile Include="Contact.cs" />
+    <Compile Include="Die.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

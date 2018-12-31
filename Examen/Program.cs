@@ -14,6 +14,7 @@ namespace Examen
             //NewContact();
             //ChangeContactNumber();
             //ShowContactNumber();
+            //NewDies();
 
             //---- COURS 2 -----
 
@@ -74,6 +75,14 @@ namespace Examen
             Console.WriteLine(marchand.PhoneNumber);
         }
 
+        public static void NewDies()
+        {
+            Die d1 = new Die(); // Dé à 6 faces
+            Die d2 = new Die(12); // Dé à 12 faces
+
+            Console.WriteLine(d1.VisibleFace);
+            Console.WriteLine(d2.VisibleFace);
+        }
         //---- COURS 2 -----
 
         public static void HeritageEmployee()
