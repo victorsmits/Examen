@@ -9,16 +9,29 @@ namespace Examen
     {
         public static void Main(string[] args)
         {
-            //InterfaceComplex();
+            //---- COURS 1 -----
+            //---- COURS 2 -----
+
             //HeritageEmployee();
+
+            //---- COURS 3 -----
+            //---- COURS 4 -----
+
+            //InterfaceComplex();
             //MathOverloading();
             //GenericPair();
             //GenericOrderedPair();
             //GenericMethod();
-            //sAliasMethode();
+            //AliasMethode();
+
+            //---- COURS 5 -----
+
             //EncapsVector();
             //StateSortedPair();
             //ChangeVector();
+
+            //---- COURS 6 -----
+
             //TotalPriceItems();
             //UtilsItem();
             //IncreaseInstanceCounter();
@@ -30,6 +43,19 @@ namespace Examen
             //InvoquerMethode();
             //InstanceCreation();
         }
+        //---- COURS 1 -----
+        //---- COURS 2 -----
+
+        public static void HeritageEmployee()
+        {
+            // avec shitbull et overide base.name
+            DateTime HB = new DateTime(1992, 4, 21);
+            Employee flemal = new Employee("C. Flemal ", HB, 3200);
+            Console.WriteLine(flemal);
+        }
+
+        //---- COURS 3 -----
+        //---- COURS 4 -----
 
         public static void InterfaceComplex()
         {
@@ -50,14 +76,6 @@ namespace Examen
 
             Complex sum = new CartesianComplex(a, b);
             Console.WriteLine(sum);
-        }
-
-        public static void HeritageEmployee()
-        {
-            // avec shitbull et overide base.name
-            DateTime HB = new DateTime(1992, 4, 21);
-            Employee flemal = new Employee("C. Flemal ", HB, 3200);
-            Console.WriteLine(flemal);
         }
 
         public static void MathOverloading()
@@ -107,6 +125,8 @@ namespace Examen
             Console.WriteLine(p);
         }
 
+        //---- COURS 5 -----
+
         public static void EncapsVector()
         {
             Vector2D u = new Vector2D(1, -1);
@@ -129,6 +149,7 @@ namespace Examen
             Console.WriteLine(u);
         }
 
+        //---- COURS 6 -----
         public static void TotalPriceItems()
         {
             Dictionary<Item, int> purchases = new Dictionary<Item, int>()
