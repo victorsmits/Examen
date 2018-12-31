@@ -101,6 +101,7 @@ namespace Examen
         }
 
         //---- COURS 2 -----
+        // absence de Pair et orderedPair car conflit avec futur code
 
         public static void HeritageEmployee()
         {
