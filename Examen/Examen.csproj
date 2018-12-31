@@ -62,6 +62,8 @@
     <Compile Include="City.cs" />
     <Compile Include="Citizen.cs" />
     <Compile Include="Container.cs" />
+    <Compile Include="ImmuableClass.cs" />
+    <Compile Include="MutableClass.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
