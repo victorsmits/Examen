@@ -16,6 +16,7 @@ namespace Examen
             //ShowContactNumber();
             //NewDies();
             //NewPairOfDies();
+            //NewCity();
 
             //---- COURS 2 -----
 
@@ -89,6 +90,14 @@ namespace Examen
         {
             PairOfDice dice = new PairOfDice(6);
             dice.PrintFaces(); // 1, 3
+        }
+
+        public static void NewCity()
+        {
+            Citizen philippe = new Citizen(" Philippe ", " Melotte ");
+
+            City woluwe = new City("Woluwé -Saint - Lambert ");
+            woluwe.ChangeMayor(philippe);
         }
 
         //---- COURS 2 -----

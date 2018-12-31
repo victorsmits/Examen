@@ -60,6 +60,8 @@
     <Compile Include="Contact.cs" />
     <Compile Include="Die.cs" />
     <Compile Include="PairOfDies.cs" />
+    <Compile Include="City.cs" />
+    <Compile Include="Citizen.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
