@@ -130,6 +130,8 @@ namespace Examen
         //---- COURS 3 -----
         // UML
         //---- COURS 4 -----
+        // Probleme avec la librarie Systeme.Drawing chez moi donc j'ai mis 
+        // les couleurs en String
 
         public static void PointTranslation()
         {
