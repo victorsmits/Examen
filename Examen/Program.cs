@@ -15,6 +15,7 @@ namespace Examen
             //GenericPair();
             //GenericOrderedPair();
             //GenericMethod();
+            //sAliasMethode();
             //EncapsVector();
             //StateSortedPair();
             //ChangeVector();
