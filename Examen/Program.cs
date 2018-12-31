@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Collections.Generic;
 using System.Reflection;
 using AliasPair = Examen.OrderedPair<int>;
@@ -27,6 +28,7 @@ namespace Examen
             // UML
             //---- COURS 4 -----
 
+            //PointTranslation();
             //InterfaceComplex();
             //MathOverloading();
             //GenericPair();
@@ -122,6 +124,13 @@ namespace Examen
         //---- COURS 3 -----
         // UML
         //---- COURS 4 -----
+
+        public static void PointTranslation()
+        {
+            ColouredPoint cp = new ColouredPoint(1, 2, Color.Red);
+            Console.WriteLine(cp);
+            Console.WriteLine(cp.Translate(1, 0));
+        }
 
         public static void InterfaceComplex()
         {
