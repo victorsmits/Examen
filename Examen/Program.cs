@@ -24,7 +24,7 @@ namespace Examen
             //ItemParser();
             //InnerOuterClass();
             //CreateLinkedList();
-            //TestType();
+            //TypeInfoAndTest();
             //InvoquerMethode();
             //InstanceCreation();
         }
@@ -187,7 +187,7 @@ namespace Examen
             Console.WriteLine(data.Size + " : " + data);
         }
 
-        public static void TestType()
+        public static void TypeInfoAndTest()
         {
             Item beer = new Item("42X", " Leffe des vignes ", 14.50);
             Type type = beer.GetType();
@@ -195,6 +195,12 @@ namespace Examen
             if (type == typeof(Item))
             {
                 Console.WriteLine(" Oui ! " + type);
+            }
+
+            foreach (FieldInfo info in type.GetFields(BindingFlags.NonPublic |
+            BindingFlags.Static))
+            {
+                Console.WriteLine(info);
             }
         }
 
