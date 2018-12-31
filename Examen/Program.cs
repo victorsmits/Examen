@@ -29,6 +29,7 @@ namespace Examen
             //---- COURS 4 -----
 
             //PointTranslation();
+            //PolyPoint();
             //InterfaceComplex();
             //MathOverloading();
             //GenericPair();
@@ -130,6 +131,16 @@ namespace Examen
             ColouredPoint cp = new ColouredPoint(1, 2, Color.Red);
             Console.WriteLine(cp);
             Console.WriteLine(cp.Translate(1, 0));
+        }
+
+        public static void PolyPoint()
+        {
+            Point p = new Point(3, 5);
+
+            ColouredPoint cp = new ColouredPoint(1, 2, Color.Red);
+
+            Console.WriteLine((p is Point) + " / " + (p is ColouredPoint));
+            Console.WriteLine((cp is Point) + " / " + (cp is ColouredPoint));
         }
 
         public static void InterfaceComplex()
