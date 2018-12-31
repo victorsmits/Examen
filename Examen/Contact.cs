@@ -23,5 +23,11 @@ namespace Examen
             return String.Format("{0} {1} ({2}) ", this.firstname,
              this.lastname, this.phonenumber);
         }
+
+        public int PhoneNumber
+        {
+            get { return phonenumber; }
+            set { phonenumber = value; }
+        }
     }
 }
