@@ -34,13 +34,14 @@ namespace Examen
             //SumOfPoint();
             //ColorOfPoint();
             //RealTypeOfPoint();
-            ShowPoint();
-            //InterfaceComplex();
+            //ShowPoint();
             //MathOverloading();
+            //InterfaceComplex();
             //GenericPair();
             //GenericOrderedPair();
             //GenericMethod();
             //AliasMethode();
+            //DefaultValue();
 
             //---- COURS 5 -----
 
@@ -194,6 +195,19 @@ namespace Examen
             Console.WriteLine(p); // ToString from ColouredPoint
         }
 
+        public static void MathOverloading()
+        {
+            byte b = 12;
+            short s = 43;
+            int i = 90;
+            //long l = 123;
+            Overloading overloading = new Overloading();
+            // overloading.Test(l, i); Long not cast in int
+            overloading.Test(s, i);
+            overloading.Test(b, i);
+            // overloading.Test(i, s); case not exist
+        }
+
         public static void InterfaceComplex()
         {
             List<Complex> list = new List<Complex>
@@ -213,19 +227,6 @@ namespace Examen
 
             Complex sum = new CartesianComplex(a, b);
             Console.WriteLine(sum);
-        }
-
-        public static void MathOverloading()
-        {
-            byte b = 12;
-            short s = 43;
-            int i = 90;
-            //long l = 123;
-            Overloading overloading = new Overloading();
-            // overloading.Test(l, i); Long not cast in int
-            overloading.Test(s, i);
-            overloading.Test(b, i);
-            // overloading.Test(i, s); case not exist
         }
 
         public static void GenericPair()
@@ -260,6 +261,12 @@ namespace Examen
         {
             AliasPair p = new AliasPair(12, 3);
             Console.WriteLine(p);
+        }
+
+        public static void DefaultValue()
+        {
+            Console.WriteLine(new Container<int>().data);
+            Console.WriteLine(new Container<bool>().data);
         }
 
         //---- COURS 5 -----
