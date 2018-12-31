@@ -31,6 +31,7 @@ namespace Examen
             //PointTranslation();
             //PolyPoint();
             //SumOfPoint();
+            //ColorOfPoint();
             //InterfaceComplex();
             //MathOverloading();
             //GenericPair();
@@ -144,7 +145,7 @@ namespace Examen
             Console.WriteLine((cp is Point) + " / " + (cp is ColouredPoint));
         }
 
-        public static void SumOfPoint(string[] args)
+        public static void SumOfPoint()
         {
             Point p = new Point(3, 5);
 
@@ -156,6 +157,17 @@ namespace Examen
         private static Point sum(Point a, Point b)
         {
             return new Point(a.X + b.X, a.Y + b.Y);
+        }
+
+        public static void ColorOfPoint()
+        {
+            Point q = new ColouredPoint(1, 2, Color.Red);
+            Console.WriteLine(IsRed((ColouredPoint)q));
+        }
+
+        private static bool IsRed(ColouredPoint p)
+        {
+            return p.Colour.Equals(Color.Red);
         }
 
         public static void InterfaceComplex()
