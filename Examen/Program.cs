@@ -32,6 +32,7 @@ namespace Examen
             //PolyPoint();
             //SumOfPoint();
             //ColorOfPoint();
+            //RealTypeOfPoint();
             //InterfaceComplex();
             //MathOverloading();
             //GenericPair();
@@ -172,6 +173,15 @@ namespace Examen
         private static bool IsRed(ColouredPoint p)
         {
             return p.Colour.Equals(Color.Red);
+        }
+
+        public static void RealTypeOfPoint()
+        {
+            ColouredPoint cp = new ColouredPoint(1, 2, Color.Red);
+            Console.WriteLine((cp is Point) + " / " + (cp is ColouredPoint));
+
+            Console.WriteLine(cp.GetType() == typeof(Point));
+            Console.WriteLine(cp.GetType() == typeof(ColouredPoint));
         }
 
         public static void InterfaceComplex()
