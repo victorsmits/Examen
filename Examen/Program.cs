@@ -205,7 +205,7 @@ namespace Examen
 			// overloading.Test(l, i); Long not cast in int
 			overloading.Test(s, i);
 			overloading.Test(b, i);
-			// overloading.Test(i, s); case not exist
+			//overloading.Test(i, s); //2 possibiltés => ambiguité
 		}
 
 		public static void InterfaceComplex()
@@ -224,8 +224,8 @@ namespace Examen
 				b += c.Imag();
 			}
 
-			Complex sum = new CartesianComplex(a, b);
-			Console.WriteLine(sum);
+			Complex sum1 = new CartesianComplex(a, b);
+			Console.WriteLine(sum1);
 		}
 
 		public static void GenericPair()
@@ -276,7 +276,7 @@ namespace Examen
 			Console.WriteLine(A.secrets[0]);
 			// modification local de secret => l'état est modifier
 			A.secrets[0] = 10;
-			//A.secrets = 10;       modification total de secret IMPOSSIBLE
+			//A.secrets = 10;    // modification partiel POSSIBLE MAIS total de secret IMPOSSIBLE
 			Console.WriteLine(A.secrets[0]);
 
 			ImmuableClass B = new ImmuableClass(1);
@@ -410,9 +410,5 @@ namespace Examen
 
 		//---- COURS 7 -----
 
-
 	}
 }
-
-
-
